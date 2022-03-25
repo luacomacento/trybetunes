@@ -36,7 +36,11 @@ class Header extends Component {
           { loading
             ? (
               <>
-                <img className="header-profile-img" src="./default-profile.jpeg" alt="" />
+                <img
+                  className="header-profile-img"
+                  src="./images/default-profile.jpeg"
+                  alt=""
+                />
                 <Loading />
               </>)
             : (

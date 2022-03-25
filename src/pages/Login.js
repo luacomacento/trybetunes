@@ -29,7 +29,7 @@ class Login extends Component {
     this.setState({
       loading: true,
     }, async () => {
-      await createUser({ name, image: './default-profile.jpeg' });
+      await createUser({ name, image: './images/default-profile.jpeg' });
       this.setState({
         loading: false,
         isLoggedIn: true,
@@ -41,7 +41,7 @@ class Login extends Component {
     const { name, isButtonDisabled, isLoggedIn, loading } = this.state;
     return (
       <div className="loginContainer">
-        <img src="/logo-trybetunes.png" alt="" className="logo" />
+        <img src="./images/logo-trybetunes.png" alt="" className="logo" />
         <div data-testid="page-login" className="loginFormContainer">
           {loading === true
             ? <Loading />

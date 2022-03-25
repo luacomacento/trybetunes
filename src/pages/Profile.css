@@ -1,0 +1,35 @@
+.profileContainer {
+  margin: 64px auto;
+  width: 500px;
+}
+
+.profileContainer h4 {
+  color: #555;
+  margin: 16px 0 4px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  margin-bottom: 16px;
+  width: 100px;
+}
+
+.profile-row {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-btn {
+  border: 1px solid var(--trybe-blue);
+  border-radius: 6px;
+  color: var(--trybe-blue);
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.edit-btn:hover {
+  background-color: var(--trybe-blue);
+  color: white;
+}

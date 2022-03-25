@@ -1,0 +1,61 @@
+.songContainer {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  height: fit-content;
+  justify-content: flex-end;
+}
+
+.songContainer label {
+  font-size: 0;
+}
+
+.songcard-img {
+  border-radius: 50%;
+}
+
+/* Checkbox em formato de coração feito com ajuda do seguinte vídeo:
+  https://www.youtube.com/watch?v=jQuLIUZIG3k */
+
+.favoriteCheck {
+  appearance: none;
+  background-color: rgb(215, 215, 215);
+  cursor: pointer;
+  height: 12px;
+  position: relative;
+  transform: rotate(45deg);
+  transition: 0.3s;
+  width: 12px;
+}
+
+.favoriteCheck:before {
+  background-color: rgb(215, 215, 215);
+  border-radius: 6px 6px 0 0;
+  content: '';
+  height: 60%;
+  position: absolute;
+  top: -55%;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.favoriteCheck:after {
+  background-color: rgb(215, 215, 215);
+  border-radius: 6px 6px 0 0;
+  content: '';
+  height: 60%;
+  position: absolute;
+  right: 75%;
+  top: 20%;
+  transform: rotate(-90deg);
+  transition: 0.3s;
+  width: 100%;
+}
+
+.favoriteCheck:checked, .favoriteCheck:checked:after, .favoriteCheck:checked:before {
+  background-color: rgb(228, 97, 97);
+}
+
+.favoriteCheck:hover, .favoriteCheck:hover:after, .favoriteCheck:hover:before {
+  background-color: rgb(255, 200, 200);
+}

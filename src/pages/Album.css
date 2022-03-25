@@ -1,0 +1,29 @@
+.albumContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 64px auto;
+  width: fit-content;
+}
+
+.albumContainer img {
+  border-radius: 8px;
+}
+
+.albumContainer h2, .albumContainer h3 {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.albumInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 240px;
+}
+
+.songsListContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

@@ -1,0 +1,43 @@
+header {
+  align-items: center;
+  background-color: rgb(46, 107, 81);
+  border-bottom: 8px solid rgb(87, 193, 140);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+}
+
+nav {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 600;
+  gap: 16px;
+  text-transform: lowercase;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: rgb(87, 193, 140);
+}
+
+.header-profileContainer {
+  align-items: center;
+  background-color: #20553e;
+  border-radius: 32px;
+  color: white;
+  display: flex;
+  font-weight: 600;
+  gap: 8px;
+  padding: 8px 12px;
+}
+
+.header-profile-img {
+  border-radius: 50%;
+  width: 24px;
+}

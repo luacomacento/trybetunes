@@ -1,0 +1,30 @@
+.profileEditContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 64px auto;
+  width: 500px;
+}
+
+.profileEditContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.profileEditContainer label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profileEditContainer input {
+  min-width: 100%;
+}
+
+.profileEditContainer input, .profileEditContainer button {
+  width: fit-content;
+}
+
+.profileEditContainer button {
+  width: unset;
+}

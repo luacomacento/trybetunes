@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
-import defaultProfile from '../../public/default-profile.jpeg';
 import Loading from '../components/Loading';
 import { createUser } from '../services/userAPI';
 import './Login.css';
@@ -30,7 +29,7 @@ class Login extends Component {
     this.setState({
       loading: true,
     }, async () => {
-      await createUser({ name, image: defaultProfile });
+      await createUser({ name, image: './default-profile.jpeg' });
       this.setState({
         loading: false,
         isLoggedIn: true,

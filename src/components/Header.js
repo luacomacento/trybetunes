@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import defaultProfile from '../../public/default-profile.jpeg';
 import { getUser } from '../services/userAPI';
 import './Header.css';
 import Loading from './Loading';
@@ -37,7 +36,7 @@ class Header extends Component {
           { loading
             ? (
               <>
-                <img className="header-profile-img" src={ defaultProfile } alt="" />
+                <img className="header-profile-img" src="./default-profile.jpeg" alt="" />
                 <Loading />
               </>)
             : (

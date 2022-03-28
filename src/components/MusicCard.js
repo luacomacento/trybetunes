@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import { BsPlayCircle } from 'react-icons/bs';
 import { addSong, removeSong } from '../services/favoriteSongsAPI';
 import './MusicCard.css';
 
@@ -18,15 +19,39 @@ class MusicCard extends Component {
     toggleLoadingHandler();
   }
 
+  showAudio({ currentTarget }) {
+    const songContainer = document.querySelector('.songContainer');
+    const isMobile = getComputedStyle(songContainer).justifyContent === 'space-between';
+    if (!isMobile) {
+      currentTarget.classList.add('display-none');
+    }
+    const currentActive = document.querySelector('.active');
+    if (currentActive) {
+      currentActive.classList.remove('active');
+      currentActive.previousSibling.classList.remove('display-none');
+      currentActive.pause();
+    }
+    currentTarget.nextSibling.classList.add('active');
+    currentTarget.nextSibling.play();
+  }
+
   render() {
     const { track, favoritesList, showArtwork } = this.props;
-    const { trackName, trackId, previewUrl, artworkUrl30, collectionName } = track;
+    const { trackName, trackId, previewUrl,
+      artworkUrl30, collectionName, trackNumber } = track;
     return (
       <div className="songContainer">
         {showArtwork
           && <img src={ artworkUrl30 } alt={ collectionName } className="songcard-img" />}
+        {!showArtwork && <span>{trackNumber}</span> }
         <h4>{trackName}</h4>
-        <audio data-testid="audio-component" src={ previewUrl } controls>
+        <BsPlayCircle size="1.6em" onClick={ (event) => this.showAudio(event) } />
+        <audio
+          className="hidden"
+          data-testid="audio-component"
+          src={ previewUrl }
+          controls
+        >
           <track kind="captions" />
           O seu navegador não suporta o elemento
           {' '}

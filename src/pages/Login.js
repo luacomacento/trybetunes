@@ -41,7 +41,8 @@ class Login extends Component {
     const { name, isButtonDisabled, isLoggedIn, loading } = this.state;
     return (
       <div className="loginContainer">
-        <img src="./images/logo-trybetunes.png" alt="" className="logo" />
+        {/* <img src="./trybetunes/images/logo-trybetunes.png" alt="" className="logo" /> */}
+        <h1 className="logo">TrybeTunes</h1>
         <div data-testid="page-login" className="loginFormContainer">
           {loading === true
             ? <Loading />

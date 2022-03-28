@@ -1,15 +1,28 @@
 header {
   align-items: center;
-  background-color: rgb(46, 107, 81);
-  border-bottom: 8px solid rgb(87, 193, 140);
+
+  /* background-color: rgb(46, 107, 81); */
+
+  /* background-color: #8f0046; */
+  background-color: #201a1b;
+
+  /* border-bottom: 8px solid rgb(87, 193, 140); */
+
+  /* border-bottom: 8px solid #660030; */
   color: white;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 16px 32px;
+  padding: 24px 32px;
 }
+
+/* header h1 {
+  color: #ffb0c8;
+} */
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   font-size: 1.4rem;
   font-weight: 600;
   gap: 16px;
@@ -23,12 +36,16 @@ nav a {
 }
 
 nav a:hover {
-  color: rgb(87, 193, 140);
+
+  /* color: rgb(87, 193, 140); */
+  color: #ffb0c8;
 }
 
 .header-profileContainer {
   align-items: center;
-  background-color: #20553e;
+
+  /* background-color: #20553e; */
+  background-color: #5a3f46;
   border-radius: 32px;
   color: white;
   display: flex;

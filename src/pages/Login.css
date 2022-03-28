@@ -16,7 +16,7 @@ body {
 }
 
 .loginFormContainer {
-  background-color: white;
+  background-color: #292427;
   border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
   margin: auto;
@@ -29,4 +29,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+
+.logo {
+  margin-top: 72px;
 }

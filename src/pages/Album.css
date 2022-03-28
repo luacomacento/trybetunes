@@ -1,13 +1,22 @@
 .albumContainer {
-  display: flex;
-  flex-wrap: wrap;
+
+  /* display: flex; */
+
+  /* flex-wrap: wrap; */
   gap: 32px;
-  margin: 64px auto;
-  width: fit-content;
+
+  /* margin: 64px auto; */
+
+  /* max-width: 100%; */
+  width: 100%;
+
+  /* width: fit-content; */
 }
 
 .albumContainer img {
+  align-self: center;
   border-radius: 8px;
+  height: 240px;
 }
 
 .albumContainer h2, .albumContainer h3 {
@@ -15,15 +24,62 @@
   text-align: center;
 }
 
+.albumHeader {
+  background: linear-gradient(0deg, rgb(46 31 35) 0%, rgba(32, 26, 27, 1) 100%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 0 auto 32px;
+  padding: 32px;
+}
+
 .albumInfo {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  width: 240px;
+  justify-content: flex-end;
+  padding-bottom: 16px;
+}
+
+.albumHeader h2 {
+  font-size: 4.5rem;
+  margin-bottom: 8px;
+  margin-top: 0;
+  text-align: left;
 }
 
 .songsListContainer {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding: 0 32px;
+}
+
+.additionalInfo {
+  display: flex;
+  gap: 4px;
+}
+
+.additionalInfo span:before {
+  content: '• ';
+}
+
+.additionalInfo span:first-child:before {
+  content: '';
+}
+
+.songsListContainer h4 {
+  max-width: 60%;
+}
+
+@media screen and ( max-width : 768px ) {
+
+  .songContainer {
+    justify-content: space-between;
+  }
+
+  .songContainer h4 {
+    margin-right: auto;
+  }
+
 }

@@ -1,7 +1,9 @@
 :root {
   --trybe-dark-green: rgb(46, 108, 81);
   --trybe-blue: rgb(30, 90, 229);
+  --trybe-blue: #ffb0c8;
   --trybe-dark-blue: rgb(19, 69, 185);
+  --trybe-dark-blue: #890065;
 }
 
 * {
@@ -11,7 +13,11 @@
 }
 
 body {
+  background-color: #121212;
+  background-color: #1f1a1c;
   margin: 0;
+  color: #A0A0A0;
+  color: #ebe0e3;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -35,8 +41,12 @@ code {
 }
 
 input[type="text"], input[type="email"] {
+  background-color: #424242;
+  background-color: #514346;
   padding: 12px 12px;
-  border: 1px solid rgba(0,0,0, 0.1);
+  border: 0px solid rgba(0,0,0, 0.1);
+  color: white;
+  color: #d6c2c6;
   border-radius: 4px;
 }
 
@@ -50,6 +60,7 @@ button {
   background-color: var(--trybe-blue);
   border: none;
   color: white;
+  color: #4A2811;
   font-weight: 500;
   border-radius: 4px;
   cursor: pointer;
@@ -63,7 +74,9 @@ button:hover {
 
 button:disabled {
   background-color: rgb(228, 228, 228);
-  color: rgb(160, 160, 160)
+  color: rgb(160, 160, 160);
+  background-color: #2e292c;
+  color: rgb(96 85 92);
 }
 
 button:disabled:hover {

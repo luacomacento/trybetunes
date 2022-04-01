@@ -51,7 +51,7 @@ input[type="text"], input[type="email"] {
 }
 
 input[type="text"]:focus, input[type="email"]:focus {
-  outline: 4px solid rgba(36, 187, 109, 0.2);
+  outline: 4px solid rgba(255, 176, 200, 0.5);
   /* border: 1px solid var(--trybe-dark-green); */
 }
 

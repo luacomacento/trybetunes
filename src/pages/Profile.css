@@ -21,9 +21,10 @@
 }
 
 .edit-btn {
-  border: 1px solid var(--trybe-blue);
+  border: 2px solid var(--trybe-blue);
   border-radius: 6px;
   color: var(--trybe-blue);
+  font-weight: 600;
   padding: 8px 16px;
   text-decoration: none;
   transition: 0.2s;
@@ -31,5 +32,5 @@
 
 .edit-btn:hover {
   background-color: var(--trybe-blue);
-  color: white;
+  color: #514346;
 }

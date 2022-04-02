@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FaHeadphones } from 'react-icons/fa';
 import { Redirect } from 'react-router-dom';
 import Loading from '../components/Loading';
 import { createUser } from '../services/userAPI';
@@ -42,7 +43,10 @@ class Login extends Component {
     return (
       <div className="loginContainer">
         {/* <img src="./trybetunes/images/logo-trybetunes.png" alt="" className="logo" /> */}
-        <h1 className="logo">TrybeTunes</h1>
+        <h1 className="logo">
+          <FaHeadphones size="2rem" />
+          TrybeTunes
+        </h1>
         <div data-testid="page-login" className="loginFormContainer">
           {loading === true
             ? <Loading />

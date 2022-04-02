@@ -20,6 +20,18 @@ header {
   color: #ffb0c8;
 } */
 
+.header-logo {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.header-right {
+  align-items: center;
+  display: flex;
+  gap: 32px;
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -29,13 +41,13 @@ nav {
   text-transform: lowercase;
 }
 
-nav a {
+header a {
   color: white;
   text-decoration: none;
   transition: 0.3s;
 }
 
-nav a:hover {
+header a:hover {
 
   /* color: rgb(87, 193, 140); */
   color: #ffb0c8;

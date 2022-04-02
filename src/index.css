@@ -50,6 +50,19 @@ input[type="text"], input[type="email"] {
   border-radius: 4px;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(140, 122, 122);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(140, 122, 122);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(140, 122, 122);
+}
+
 input[type="text"]:focus, input[type="email"]:focus {
   outline: 4px solid rgba(255, 176, 200, 0.5);
   /* border: 1px solid var(--trybe-dark-green); */

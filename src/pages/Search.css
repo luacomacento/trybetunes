@@ -25,3 +25,19 @@
   gap: 32px;
   justify-content: center;
 }
+
+@media screen and ( max-width : 768px ) {
+
+  .searchContainer form {
+    flex-wrap: wrap;
+  }
+
+  .searchContainer button {
+    flex: 1;
+  }
+
+  .searchArtistInput {
+    min-width: unset;
+    width: 100%;
+  }
+}

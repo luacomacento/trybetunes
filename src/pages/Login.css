@@ -32,5 +32,8 @@ body {
 }
 
 .logo {
+  align-items: center;
+  display: flex;
+  gap: 12px;
   margin-top: 72px;
 }
